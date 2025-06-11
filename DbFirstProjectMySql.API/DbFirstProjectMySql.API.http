@@ -1,0 +1,6 @@
+@DbFirstProjectMySql.API_HostAddress = http://localhost:5053
+
+GET {{DbFirstProjectMySql.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
