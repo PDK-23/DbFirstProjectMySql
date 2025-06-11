@@ -77,7 +77,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseDeveloperExceptionPage();
 app.MapControllers();
 
 app.Run();
