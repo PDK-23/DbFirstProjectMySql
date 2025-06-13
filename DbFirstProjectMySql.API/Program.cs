@@ -13,8 +13,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Đăng ký DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
+        builder.Configuration.GetConnectionString("ConnectionStrings__DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ConnectionStrings__DefaultConnection"))
     ));
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
