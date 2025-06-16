@@ -2,6 +2,7 @@
 using DbFirstProjectMySql.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace DbFirstProjectMySql.API.Controllers
 {
@@ -16,6 +17,11 @@ namespace DbFirstProjectMySql.API.Controllers
         {
             _userService = userService;
         }
+        private int GetCurrentUserRole()
+        {
+            var roleClaim = User.FindFirst(ClaimTypes.Role)?.Value;
+            return int.TryParse(roleClaim, out var role) ? role : -1;
+        }
 
         // GET: api/Users
         [HttpGet]
@@ -29,21 +35,31 @@ namespace DbFirstProjectMySql.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] UserCreateDto dto)
         {
-            var result = await _userService.CreateAsync(dto);
-            if (result == null)
-                return Conflict("Username already exists!");
+            try
+            {
+                var result = await _userService.CreateAsync(dto, GetCurrentUserRole());
+                if (result == null)
+                    return Conflict("Username already exists!");
 
-            return Ok(result);
+                return Ok(result);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Forbid(ex.Message);
+            }
         }
 
-        // PUT: api/Users/{id}
         [HttpPatch("{id}")]
         public async Task<IActionResult> UpdateUser(int id, [FromBody] UserEditDto dto)
         {
             try
             {
-                await _userService.UpdateAsync(dto, id);
+                await _userService.UpdateAsync(dto, id, GetCurrentUserRole());
                 return Ok();
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Forbid(ex.Message);
             }
             catch (Exception ex)
             {
@@ -51,12 +67,18 @@ namespace DbFirstProjectMySql.API.Controllers
             }
         }
 
-        // DELETE: api/Users/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _userService.DeleteAsync(id);
-            return Ok();
+            try
+            {
+                await _userService.DeleteAsync(id, GetCurrentUserRole());
+                return Ok();
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return Forbid(ex.Message);
+            }
         }
     }
 }

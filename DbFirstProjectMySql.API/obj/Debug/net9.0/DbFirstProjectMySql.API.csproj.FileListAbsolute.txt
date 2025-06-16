@@ -1,3 +1,11 @@
+D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.csproj.AssemblyReference.cache
+D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.AssemblyInfoInputs.cache
+D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.AssemblyInfo.cs
+D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.csproj.CoreCompileInputs.cache
+D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.MvcApplicationPartsAssemblyInfo.cs
+D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.MvcApplicationPartsAssemblyInfo.cache
+D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.sourcelink.json
 D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\bin\Debug\net9.0\appsettings.Development.json
 D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\bin\Debug\net9.0\appsettings.json
 D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\bin\Debug\net9.0\DbFirstProjectMySql.API.staticwebassets.endpoints.json
@@ -33,14 +41,6 @@ D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\bin\Debug\net9.0\DbFirstPr
 D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\bin\Debug\net9.0\DbFirstProjectMySql.Application.pdb
 D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\bin\Debug\net9.0\DbFirstProjectMySql.Domain.pdb
 D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\bin\Debug\net9.0\DbFirstProjectMySql.Infrastructure.pdb
-D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.csproj.AssemblyReference.cache
-D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.GeneratedMSBuildEditorConfig.editorconfig
-D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.AssemblyInfoInputs.cache
-D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.AssemblyInfo.cs
-D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.csproj.CoreCompileInputs.cache
-D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.MvcApplicationPartsAssemblyInfo.cs
-D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.MvcApplicationPartsAssemblyInfo.cache
-D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\DbFirstProjectMySql.API.sourcelink.json
 D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\scopedcss\bundle\DbFirstProjectMySql.API.styles.css
 D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\staticwebassets.build.json
 D:\github\DbFirstProjectMySql\DbFirstProjectMySql.API\obj\Debug\net9.0\staticwebassets.build.json.cache

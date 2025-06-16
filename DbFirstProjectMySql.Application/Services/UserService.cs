@@ -2,6 +2,7 @@
 using DbFirstProjectMySql.Application.DTOs;
 using DbFirstProjectMySql.Application.Interfaces;
 using DbFirstProjectMySql.Domain.Entities;
+using DbFirstProjectMySql.Domain.Enums;
 using DbFirstProjectMySql.Infrastructure.Entities;
 using DbFirstProjectMySql.Infrastructure.IUnitOfWork;
 using static BCrypt.Net.BCrypt;
@@ -31,22 +32,41 @@ namespace DbFirstProjectMySql.Application.Services
             return _mapper.Map<UserDto>(user);
         }
 
-        public async Task<UserDto?> CreateAsync(UserCreateDto dto)
+        public async Task<UserDto?> CreateAsync(UserCreateDto dto, int currentUserRole)
         {
-            // Kiểm tra username đã tồn tại chưa
+            if (currentUserRole != (int)RoleEnum.Admin)
+                throw new UnauthorizedAccessException("Only admin can create users.");
+
             var existingUser = (await _unitOfWork.UserRepository.GetAllAsync())
                 .FirstOrDefault(u => u.Username == dto.Username);
 
             if (existingUser != null)
-                return null; // Đã tồn tại, không cho tạo mới
+                return null;
 
             var user = _mapper.Map<User>(dto);
             user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
 
             await _unitOfWork.UserRepository.AddAsync(user);
             await _unitOfWork.SaveAsync();
+
             return _mapper.Map<UserDto>(user);
         }
+        public async Task<UserDto?> RegisterAsync(UserCreateDto dto)
+        {
+            var existingUser = (await _unitOfWork.UserRepository.GetAllAsync())
+                .FirstOrDefault(u => u.Username == dto.Username);
+
+            if (existingUser != null)
+                return null;
+
+            var user = _mapper.Map<User>(dto);
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+            await _unitOfWork.UserRepository.AddAsync(user);
+            await _unitOfWork.SaveAsync();
+
+            return _mapper.Map<UserDto>(user);
+        }
+
         public async Task AddAsync(UserDto dto, string password)
         {
             var user = _mapper.Map<User>(dto);
@@ -54,30 +74,30 @@ namespace DbFirstProjectMySql.Application.Services
             await _unitOfWork.UserRepository.AddAsync(user);
             await _unitOfWork.SaveAsync();
         }
-
-        public async Task UpdateAsync(UserEditDto dto, int id)
+        public async Task UpdateAsync(UserEditDto dto, int id, int currentUserRole)
         {
-            // Lấy user từ DB theo id
+            if (currentUserRole != (int)RoleEnum.Admin)
+                throw new UnauthorizedAccessException("Only admin can update users.");
+
             var user = await _unitOfWork.UserRepository.GetByIdAsync(id);
             if (user == null)
                 throw new Exception("User not found!");
 
-            // Kiểm tra username đã tồn tại chưa (trừ chính user này)
             var allUsers = await _unitOfWork.UserRepository.GetAllAsync();
             var existed = allUsers.Any(u => u.Username == dto.Username && u.Id != id);
             if (existed)
                 throw new Exception("Username already exists!");
 
-            // Chỉ cập nhật username
             user.Username = dto.Username;
 
             _unitOfWork.UserRepository.Update(user);
             await _unitOfWork.SaveAsync();
         }
-
-
-        public async Task DeleteAsync(int id)
+        public async Task DeleteAsync(int id, int currentUserRole)
         {
+            if (currentUserRole != (int)RoleEnum.Admin)
+                throw new UnauthorizedAccessException("Only admin can delete users.");
+
             var user = await _unitOfWork.UserRepository.GetByIdAsync(id);
             if (user != null)
             {
@@ -85,6 +105,7 @@ namespace DbFirstProjectMySql.Application.Services
                 await _unitOfWork.SaveAsync();
             }
         }
+
         public async Task<UserDto?> GetByUsernameAsync(string username)
         {
             var users = await _unitOfWork.UserRepository.GetAllAsync();
@@ -121,59 +142,6 @@ namespace DbFirstProjectMySql.Application.Services
             await _unitOfWork.SaveAsync();
             return new ChangePasswordResult { Success = true };
         }
-        public async Task RevokeRefreshTokenAsync(RefreshToken token)
-        {
-            token.IsRevoked = true;
-            _unitOfWork.RefreshTokenRepository.Update(token);
-            await _unitOfWork.SaveAsync();
-        }
-
-        public async Task AddRefreshToken(int userId, string refreshToken, DateTime expiryTime)
-        {
-            var hashedToken = BCrypt.Net.BCrypt.HashPassword(refreshToken); // Hash token
-
-            var token = new RefreshToken
-            {
-                UserId = userId,
-                Token = hashedToken,
-                ExpiryTime = expiryTime,
-                IsRevoked = false
-            };
-            await _unitOfWork.RefreshTokenRepository.AddAsync(token);
-            await _unitOfWork.SaveAsync();
-        }
-        public async Task SetUserRefreshToken(int userId, string refreshToken)
-        {
-            var expiryTime = DateTime.UtcNow.AddDays(7);
-            var hashedToken = BCrypt.Net.BCrypt.HashPassword(refreshToken); // Hash token
-
-            var token = new RefreshToken
-            {
-                UserId = userId,
-                Token = hashedToken,
-                ExpiryTime = expiryTime,
-                IsRevoked = false
-            };
-            await _unitOfWork.RefreshTokenRepository.AddAsync(token);
-            await _unitOfWork.SaveAsync();
-        }
-        public async Task<RefreshToken?> GetValidRefreshTokenAsync(string token)
-        {
-            var tokens = await _unitOfWork.RefreshTokenRepository.GetAllAsync();
-
-            var validTokens = tokens
-                .Where(rt => !rt.IsRevoked && rt.ExpiryTime > DateTime.UtcNow);
-
-            foreach (var dbToken in validTokens)
-            {
-                if (BCrypt.Net.BCrypt.Verify(token, dbToken.Token))
-                {
-                    return dbToken;
-                }
-            }
-
-            return null;
-        }
-
+        
     }
 }
