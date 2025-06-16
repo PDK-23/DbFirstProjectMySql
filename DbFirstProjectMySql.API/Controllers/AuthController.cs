@@ -1,7 +1,6 @@
 ﻿using DbFirstProjectMySql.Application.DTOs;
 using DbFirstProjectMySql.Application.DTOs.User;
 using DbFirstProjectMySql.Application.Interfaces;
-using DbFirstProjectMySql.Infrastructure.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -13,12 +12,14 @@ namespace DbFirstProjectMySql.API.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IUserService _userService;
+        private readonly IRefreshToken _refreshToken;
         private readonly JwtService _jwtService;
 
-        public AuthController(IUserService userService, JwtService jwtService)
+        public AuthController(IUserService userService, JwtService jwtService, IRefreshToken refreshTokenService)
         {
             _userService = userService;
             _jwtService = jwtService;
+            _refreshToken = refreshTokenService;
         }
 
         // POST: api/Auth/register
@@ -33,7 +34,7 @@ namespace DbFirstProjectMySql.API.Controllers
                 RoleId = 1
             };
 
-            var result = await _userService.CreateAsync(userCreate);
+            var result = await _userService.RegisterAsync(userCreate);
             if (result == null)
                 return Conflict("Username already exists!");
 
@@ -60,7 +61,7 @@ namespace DbFirstProjectMySql.API.Controllers
             var refreshToken = _jwtService.GenerateRefreshToken();
 
             // Nếu muốn lưu refresh token vào DB (nên làm)
-            await _userService.SetUserRefreshToken(entity.Id, refreshToken);
+            await _refreshToken.SetUserRefreshToken(entity.Id, refreshToken);
 
             return Ok(new
             {
@@ -73,7 +74,7 @@ namespace DbFirstProjectMySql.API.Controllers
         public async Task<IActionResult> RefreshToken([FromBody] RefreshTokenRequestDto dto)
         {
             // 1. Kiểm tra refresh token có tồn tại trong DB, còn hạn, chưa bị thu hồi
-            var tokenInDb = await _userService.GetValidRefreshTokenAsync(dto.RefreshToken);
+            var tokenInDb = await _refreshToken.GetValidRefreshTokenAsync(dto.RefreshToken);
 
             if (tokenInDb == null)
                 return Unauthorized("Refresh token is invalid or expired!");
@@ -90,8 +91,8 @@ namespace DbFirstProjectMySql.API.Controllers
             var newRefreshToken = _jwtService.GenerateRefreshToken();
             var expiryTime = DateTime.UtcNow.AddDays(7);
 
-            await _userService.RevokeRefreshTokenAsync(tokenInDb); // Thu hồi token cũ (IsRevoked = true)
-            await _userService.AddRefreshToken(user.Id, newRefreshToken, expiryTime);
+            await _refreshToken.RevokeRefreshTokenAsync(tokenInDb); // Thu hồi token cũ (IsRevoked = true)
+            await _refreshToken.AddRefreshToken(user.Id, newRefreshToken, expiryTime);
 
             return Ok(new
             {

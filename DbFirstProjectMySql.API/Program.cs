@@ -22,6 +22,7 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<IRefreshToken, RefreshTokenService>();
 builder.Services.AddScoped<JwtService>();
 
 builder.Services.AddControllers();
