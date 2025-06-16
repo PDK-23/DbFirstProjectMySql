@@ -35,13 +35,13 @@ namespace DbFirstProjectMySql.API.Controllers
         }
 
         // PUT: api/Users/{id}
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] UserDto dto)
-        {
-            if (id != dto.Id) return BadRequest("ID mismatch");
-            await _userService.UpdateAsync(dto);
-            return Ok();
-        }
+        //[HttpPut("{id}")]
+        //public async Task<IActionResult> Update(int id, [FromBody] UserDto dto)
+        //{
+        //    if (id != dto.Id) return BadRequest("ID mismatch");
+        //    await _userService.UpdateAsync(dto);
+        //    return Ok();
+        //}
 
         // DELETE: api/Users/{id}
         [HttpDelete("{id}")]
