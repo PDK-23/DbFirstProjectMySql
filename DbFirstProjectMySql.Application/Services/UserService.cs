@@ -54,12 +54,26 @@ namespace DbFirstProjectMySql.Application.Services
             await _unitOfWork.SaveAsync();
         }
 
-        public async Task UpdateAsync(UserDto dto)
+        public async Task UpdateAsync(UserEditDto dto, int id)
         {
-            var user = _mapper.Map<User>(dto);
+            // Lấy user từ DB theo id
+            var user = await _unitOfWork.UserRepository.GetByIdAsync(id);
+            if (user == null)
+                throw new Exception("User not found!");
+
+            // Kiểm tra username đã tồn tại chưa (trừ chính user này)
+            var allUsers = await _unitOfWork.UserRepository.GetAllAsync();
+            var existed = allUsers.Any(u => u.Username == dto.Username && u.Id != id);
+            if (existed)
+                throw new Exception("Username already exists!");
+
+            // Chỉ cập nhật username
+            user.Username = dto.Username;
+
             _unitOfWork.UserRepository.Update(user);
             await _unitOfWork.SaveAsync();
         }
+
 
         public async Task DeleteAsync(int id)
         {
@@ -83,6 +97,29 @@ namespace DbFirstProjectMySql.Application.Services
             return users.FirstOrDefault(u => u.Username == username);
         }
 
+        public class ChangePasswordResult
+        {
+            public bool Success { get; set; }
+            public string? Error { get; set; }
+        }
+
+        public async Task<ChangePasswordResult> ChangePasswordAsync(int userId, string oldPassword, string newPassword)
+        {
+            var user = await _unitOfWork.UserRepository.GetByIdAsync(userId);
+            if (user == null)
+                return new ChangePasswordResult { Success = false, Error = "User not found" };
+
+            // Kiểm tra password cũ
+            if (!BCrypt.Net.BCrypt.Verify(oldPassword, user.PasswordHash))
+                return new ChangePasswordResult { Success = false, Error = "Old password is incorrect" };
+
+            // Hash password mới và update
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(newPassword);
+
+            _unitOfWork.UserRepository.Update(user);
+            await _unitOfWork.SaveAsync();
+            return new ChangePasswordResult { Success = true };
+        }
 
     }
 }

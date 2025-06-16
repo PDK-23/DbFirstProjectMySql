@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static DbFirstProjectMySql.Application.Services.UserService;
 
 namespace DbFirstProjectMySql.Application.Interfaces
 {
@@ -14,11 +15,11 @@ namespace DbFirstProjectMySql.Application.Interfaces
         Task<UserDto?> GetByIdAsync(int id);
         Task AddAsync(UserDto dto, string password);
         Task<UserDto?> CreateAsync(UserCreateDto dto);
-        Task UpdateAsync(UserDto dto);
+        Task UpdateAsync(UserEditDto dto, int id);
         Task DeleteAsync(int id);
         Task<UserDto?> GetByUsernameAsync(string username);
         Task<User?> GetEntityByUsernameAsync(string username); // Trả về entity để lấy PasswordHash
-
+        Task<ChangePasswordResult> ChangePasswordAsync(int userId, string oldPassword, string newPassword);
     }
 
 

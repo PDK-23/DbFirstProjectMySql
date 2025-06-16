@@ -2,7 +2,9 @@
 using DbFirstProjectMySql.Application.DTOs.User;
 using DbFirstProjectMySql.Application.Interfaces;
 using DbFirstProjectMySql.Infrastructure.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace DbFirstProjectMySql.API.Controllers
 {
@@ -57,5 +59,23 @@ namespace DbFirstProjectMySql.API.Controllers
             var token = _jwtService.GenerateToken(entity.Id.ToString(), entity.Username, entity.RoleId.ToString());
             return Ok(new { token });
         }
+
+        [HttpPost("change-password")]
+        [Authorize]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto dto)
+        {
+            var userIdClaim = User.FindFirst("id")
+                              ?? User.FindFirst(ClaimTypes.NameIdentifier)
+                              ?? User.FindFirst("sub");
+            if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+                return Unauthorized("Invalid token.");
+
+            var result = await _userService.ChangePasswordAsync(userId, dto.OldPassword, dto.NewPassword);
+            if (!result.Success)
+                return BadRequest(new { error = result.Error });
+
+            return Ok(new { message = "Password changed successfully." });
+        }
+
     }
 }
