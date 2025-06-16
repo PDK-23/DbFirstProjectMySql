@@ -1,10 +1,12 @@
 ﻿using DbFirstProjectMySql.Application.DTOs;
 using DbFirstProjectMySql.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DbFirstProjectMySql.API.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class UsersController : ControllerBase
     {
