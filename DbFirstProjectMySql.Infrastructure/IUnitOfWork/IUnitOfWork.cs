@@ -1,4 +1,5 @@
-﻿using DbFirstProjectMySql.Infrastructure.Entities;
+﻿using DbFirstProjectMySql.Domain.Entities;
+using DbFirstProjectMySql.Infrastructure.Entities;
 using DbFirstProjectMySql.Infrastructure.Repositories;
 
 namespace DbFirstProjectMySql.Infrastructure.IUnitOfWork
@@ -8,6 +9,7 @@ namespace DbFirstProjectMySql.Infrastructure.IUnitOfWork
         IRepository<User> UserRepository { get; }
         IRepository<Role> RoleRepository { get; }
         IRepository<Product> ProductRepository { get; }
+        IRepository<RefreshToken> RefreshTokenRepository { get; }
         Task SaveAsync();
     }
 

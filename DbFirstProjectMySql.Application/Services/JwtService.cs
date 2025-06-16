@@ -13,6 +13,11 @@ public class JwtService
         _config = config;
     }
 
+    public string GenerateRefreshToken()
+    {
+        return Convert.ToBase64String(Guid.NewGuid().ToByteArray());
+    }
+
     public string GenerateToken(string userId, string username, string role)
     {
         var claims = new[]

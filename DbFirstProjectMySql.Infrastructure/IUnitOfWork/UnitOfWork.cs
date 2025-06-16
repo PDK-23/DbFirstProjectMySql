@@ -1,4 +1,5 @@
-﻿using DbFirstProjectMySql.Infrastructure.Data;
+﻿using DbFirstProjectMySql.Domain.Entities;
+using DbFirstProjectMySql.Infrastructure.Data;
 using DbFirstProjectMySql.Infrastructure.Entities;
 using DbFirstProjectMySql.Infrastructure.IUnitOfWork;
 using DbFirstProjectMySql.Infrastructure.Repositories;
@@ -10,6 +11,7 @@ public class UnitOfWork : IUnitOfWork
     public IRepository<User> UserRepository { get; }
     public IRepository<Role> RoleRepository { get; }
     public IRepository<Product> ProductRepository { get; }
+    public IRepository<RefreshToken> RefreshTokenRepository { get; }
 
     public UnitOfWork(AppDbContext context)
     {
@@ -17,6 +19,7 @@ public class UnitOfWork : IUnitOfWork
         UserRepository = new Repository<User>(context);
         RoleRepository = new Repository<Role>(context);
         ProductRepository = new Repository<Product>(context);
+        RefreshTokenRepository = new Repository<RefreshToken>(context);
     }
 
     public async Task SaveAsync() => await _context.SaveChangesAsync();

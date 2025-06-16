@@ -3,88 +3,52 @@
   "WorkspaceRootPath": "D:\\github\\DbFirstProjectMySql\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|solutionrelative:dbfirstprojectmysql.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\changepassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|solutionrelative:dbfirstprojectmysql.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E845DC57-3A9A-4973-947D-CDAC5192329A}|DbFirstProjectMySql.Domain\\DbFirstProjectMySql.Domain.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E845DC57-3A9A-4973-947D-CDAC5192329A}|DbFirstProjectMySql.Domain\\DbFirstProjectMySql.Domain.csproj|solutionrelative:dbfirstprojectmysql.domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\roledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\usereditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\usereditdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|solutionrelative:dbfirstprojectmysql.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|solutionrelative:dbfirstprojectmysql.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.infrastructure\\iunitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|solutionrelative:dbfirstprojectmysql.infrastructure\\iunitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|solutionrelative:dbfirstprojectmysql.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|solutionrelative:dbfirstprojectmysql.infrastructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|solutionrelative:dbfirstprojectmysql.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E988CEA5-1E17-4F28-9869-E5F426306943}|DbFirstProjectMySql.API\\DbFirstProjectMySql.API.csproj|solutionrelative:dbfirstprojectmysql.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.infrastructure\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|solutionrelative:dbfirstprojectmysql.infrastructure\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.application\\dtos\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA44480D-2F84-4C4B-A1CB-BBB8945883C7}|DbFirstProjectMySql.Application\\DbFirstProjectMySql.Application.csproj|solutionrelative:dbfirstprojectmysql.application\\dtos\\refreshtokenrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|solutionrelative:dbfirstprojectmysql.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.infrastructure\\iunitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|solutionrelative:dbfirstprojectmysql.infrastructure\\iunitofwork\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.infrastructure\\iunitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2E9DD8-A6B9-4DBA-93D7-F03F7191C023}|DbFirstProjectMySql.Infrastructure\\DbFirstProjectMySql.Infrastructure.csproj|solutionrelative:dbfirstprojectmysql.infrastructure\\iunitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E845DC57-3A9A-4973-947D-CDAC5192329A}|DbFirstProjectMySql.Domain\\DbFirstProjectMySql.Domain.csproj|d:\\github\\dbfirstprojectmysql\\dbfirstprojectmysql.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E845DC57-3A9A-4973-947D-CDAC5192329A}|DbFirstProjectMySql.Domain\\DbFirstProjectMySql.Domain.csproj|solutionrelative:dbfirstprojectmysql.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,270 +66,159 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Mapping\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\Mapping\\MappingProfile.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Mapping\\MappingProfile.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\Mapping\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T01:48:40.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.API\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAcwDsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T01:48:18.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductCreateDto.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\ProductCreateDto.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\ProductCreateDto.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\ProductCreateDto.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\ProductCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T01:46:21.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChangePasswordDto.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\ChangePasswordDto.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\ChangePasswordDto.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\ChangePasswordDto.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\ChangePasswordDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T01:45:52.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Interfaces\\IUserService.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\Interfaces\\IUserService.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Interfaces\\IUserService.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\Interfaces\\IUserService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAjwBUAAABrAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:57:34.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserEditDto.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserEditDto.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\UserEditDto.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserEditDto.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\UserEditDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:57:02.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\ProductDto.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\ProductDto.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\ProductDto.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\ProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:56:33.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RoleDto.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\RoleDto.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\RoleDto.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\RoleDto.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\RoleDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:56:33.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserCreateDto.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserCreateDto.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\UserCreateDto.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserCreateDto.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\UserCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:56:30.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserRegisterDto.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserRegisterDto.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\UserRegisterDto.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserRegisterDto.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\UserRegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:56:14.496Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserLoginDto.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserLoginDto.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\UserLoginDto.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserLoginDto.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\UserLoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:56:11.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserDto.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserDto.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\UserDto.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\UserDto.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\UserDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:56:04.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\Services\\UserService.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Services\\UserService.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Application\\Services\\UserService.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAADwv30AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:55:22.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.API\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:21:47.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\appsettings.json",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.API\\appsettings.json",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\appsettings.json",
-              "RelativeToolTip": "DbFirstProjectMySql.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-16T00:07:37.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.API\\appsettings.Development.json",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\appsettings.Development.json",
-              "RelativeToolTip": "DbFirstProjectMySql.API\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-16T00:07:34.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\UnitOfWork.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\UnitOfWork.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\UnitOfWork.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAjwBUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T00:00:09.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\Repositories\\Repository.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.Infrastructure\\Repositories\\Repository.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\Repositories\\Repository.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.Infrastructure\\Repositories\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T23:45:48.302Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "DbFirstProjectMySql.Infrastructure\\Repositories\\IRepository.cs",
               "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\Repositories\\IRepository.cs",
               "RelativeToolTip": "DbFirstProjectMySql.Infrastructure\\Repositories\\IRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T23:59:57.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\Program.cs",
-              "RelativeDocumentMoniker": "DbFirstProjectMySql.API\\Program.cs",
-              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\Program.cs",
-              "RelativeToolTip": "DbFirstProjectMySql.API\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAlwBgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T23:53:53.426Z",
+              "WhenOpened": "2025-06-16T08:16:39.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
+              "Title": "RefreshTokenRequestDto.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\RefreshTokenRequestDto.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\DTOs\\RefreshTokenRequestDto.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\DTOs\\RefreshTokenRequestDto.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.Application\\DTOs\\RefreshTokenRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T08:08:08.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\IUnitOfWork.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\IUnitOfWork.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:55:58.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.Infrastructure\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\Repositories\\Repository.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.Infrastructure\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:54:32.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.Infrastructure\\IUnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:54:26.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\Services\\UserService.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAcwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:54:03.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DbFirstProjectMySql.Infrastructure\\Data\\AppDbContext.cs",
               "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Infrastructure\\Data\\AppDbContext.cs",
               "RelativeToolTip": "DbFirstProjectMySql.Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAiwF8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T23:46:02.54Z"
+              "WhenOpened": "2025-06-16T07:53:17.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.Domain\\Entities\\User.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:52:59.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Domain\\Entities\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.Domain\\Entities\\RefreshToken.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Domain\\Entities\\RefreshToken.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.Domain\\Entities\\RefreshToken.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:52:22.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\Interfaces\\IUserService.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.Application\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIA0wBgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:46:30.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAmwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T05:27:05.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "DbFirstProjectMySql.Application\\Services\\JwtService.cs",
+              "ToolTip": "D:\\github\\DbFirstProjectMySql\\DbFirstProjectMySql.Application\\Services\\JwtService.cs",
+              "RelativeToolTip": "DbFirstProjectMySql.Application\\Services\\JwtService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T05:02:50.762Z",
+              "EditorCaption": ""
             }
           ]
         }

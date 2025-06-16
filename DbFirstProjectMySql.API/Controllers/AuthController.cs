@@ -40,8 +40,6 @@ namespace DbFirstProjectMySql.API.Controllers
             return Ok(result);
         }
 
-
-        // POST: api/Auth/login
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserLoginDto dto)
         {
@@ -55,9 +53,51 @@ namespace DbFirstProjectMySql.API.Controllers
             if (!BCrypt.Net.BCrypt.Verify(dto.Password, entity.PasswordHash))
                 return Unauthorized("Invalid password");
 
-            // Lấy role, id để sinh token
-            var token = _jwtService.GenerateToken(entity.Id.ToString(), entity.Username, entity.RoleId.ToString());
-            return Ok(new { token });
+            // Lấy role, id để sinh access token
+            var accessToken = _jwtService.GenerateToken(entity.Id.ToString(), entity.Username, entity.RoleId.ToString());
+
+            // Sinh refresh token (có thể lưu vào DB hoặc trả về luôn)
+            var refreshToken = _jwtService.GenerateRefreshToken();
+
+            // Nếu muốn lưu refresh token vào DB (nên làm)
+            await _userService.SetUserRefreshToken(entity.Id, refreshToken);
+
+            return Ok(new
+            {
+                accessToken,
+                refreshToken
+            });
+        }
+
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshToken([FromBody] RefreshTokenRequestDto dto)
+        {
+            // 1. Kiểm tra refresh token có tồn tại trong DB, còn hạn, chưa bị thu hồi
+            var tokenInDb = await _userService.GetValidRefreshTokenAsync(dto.RefreshToken);
+
+            if (tokenInDb == null)
+                return Unauthorized("Refresh token is invalid or expired!");
+
+            // 2. Lấy userId từ token hoặc từ trường UserId
+            var user = await _userService.GetByIdAsync(tokenInDb.UserId);
+            if (user == null)
+                return Unauthorized("User does not exist!");
+
+            // 3. Sinh access token mới
+            var accessToken = _jwtService.GenerateToken(user.Id.ToString(), user.Username, user.RoleId.ToString());
+
+            // 4. Sinh refresh token mới và lưu vào DB
+            var newRefreshToken = _jwtService.GenerateRefreshToken();
+            var expiryTime = DateTime.UtcNow.AddDays(7);
+
+            await _userService.RevokeRefreshTokenAsync(tokenInDb); // Thu hồi token cũ (IsRevoked = true)
+            await _userService.AddRefreshToken(user.Id, newRefreshToken, expiryTime);
+
+            return Ok(new
+            {
+                accessToken,
+                refreshToken = newRefreshToken
+            });
         }
 
         [HttpPost("change-password")]

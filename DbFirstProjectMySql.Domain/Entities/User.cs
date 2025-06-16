@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DbFirstProjectMySql.Domain.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace DbFirstProjectMySql.Infrastructure.Entities;
@@ -14,6 +15,7 @@ public partial class User
     public int RoleId { get; set; }
 
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
+    public ICollection<RefreshToken> RefreshTokens { get; set; }
 
     public virtual Role Role { get; set; } = null!;
 }

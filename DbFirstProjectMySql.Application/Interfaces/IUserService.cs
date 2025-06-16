@@ -1,4 +1,5 @@
 ﻿using DbFirstProjectMySql.Application.DTOs;
+using DbFirstProjectMySql.Domain.Entities;
 using DbFirstProjectMySql.Infrastructure.Entities;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,10 @@ namespace DbFirstProjectMySql.Application.Interfaces
         Task DeleteAsync(int id);
         Task<UserDto?> GetByUsernameAsync(string username);
         Task<User?> GetEntityByUsernameAsync(string username); // Trả về entity để lấy PasswordHash
+        Task SetUserRefreshToken(int userId, string refreshToken);
+        Task<RefreshToken?> GetValidRefreshTokenAsync(string token);
+        Task RevokeRefreshTokenAsync(RefreshToken token);
+        Task AddRefreshToken(int userId, string refreshToken, DateTime expiryTime);
         Task<ChangePasswordResult> ChangePasswordAsync(int userId, string oldPassword, string newPassword);
     }
 
