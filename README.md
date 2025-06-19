@@ -174,4 +174,4 @@ Truy cập Swagger tại: `https://localhost:7227/swagger/index.html` (hoặc c�
 
 * **Name:** Pham-Dang-Khoi
 * **GitHub:** https://github.com/PDK-23/
-* **Deploy URL:** https://products-api-bbdqc2h4csexbte6.eastasia-01.azurewebsites.net/swagger/index.html
+* **Deploy URL:** https://products-api-bbdqc2h4csexbte6.eastasia-01.azurewebsites.net/index.html
