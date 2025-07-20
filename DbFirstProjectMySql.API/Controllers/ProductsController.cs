@@ -18,14 +18,14 @@ namespace DbFirstProjectMySql.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<ActionResult<IEnumerable<ProductDto>>> GetAll()
         {
             var products = await _productService.GetAllAsync();
             return Ok(products);
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<ActionResult<ProductDto>> GetById(int id)
         {
             var product = await _productService.GetByIdAsync(id);
             if (product == null) return NotFound();
@@ -33,7 +33,7 @@ namespace DbFirstProjectMySql.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] ProductCreateDto dto)
+        public async Task<ActionResult<ProductCreateDto>> Create([FromBody] ProductCreateDto dto)
         {
             // Lấy UserId từ claim trong token (ví dụ với claim type NameIdentifier)
             var userId = int.Parse(User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value ?? "0");
@@ -44,7 +44,7 @@ namespace DbFirstProjectMySql.API.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] ProductCreateDto dto)
+        public async Task<ActionResult<ProductCreateDto>> Update(int id, [FromBody] ProductCreateDto dto)
         {
             var existing = await _productService.GetByIdAsync(id);
             if (existing == null)
